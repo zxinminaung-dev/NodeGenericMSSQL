@@ -6,11 +6,11 @@ npm install
 ## run 
 npm start
 
-Get All (Get Method)
+### Get All (Get Method)
 http://localhost:3000/api/product?page=1&pageSize=10&sortBy=Name&sortOrdeDESC
-GET By Id (Get Method)
+### GET By Id (Get Method)
 http://localhost:3000/api/product/getbyid?id=1
-Create/Update (Post Method)
+### Create/Update (Post Method)
 http://localhost:3000/api/product
 If New Id must NULL
 {
