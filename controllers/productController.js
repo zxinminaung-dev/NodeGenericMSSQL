@@ -22,7 +22,6 @@ router.get('/getbyname',async(req,res)=>{
     const name = req.query.name;
     console.log(name)
     const result=await productRepo.FindByName(name);
-    console.log(result)
     res.json(result)
 })
 
@@ -37,11 +36,12 @@ router.post('/', async (req, res) => {
             result=await productService.create(product);
         }
         res.json(result);
-    }catch(error){
-
-    }
-    
+    }catch(error){}    
 });
 
-
+router.delete('/delete',async(req,res)=>{
+    const id=req.query.id
+    var result=await productService.delete(id)
+    res.json(result)
+})
 module.exports=router;
