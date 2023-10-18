@@ -13,12 +13,17 @@ http://localhost:3000/api/product/getbyid?id=1
 ### Create/Update (Post Method)
 http://localhost:3000/api/product
 If New Id must NULL
-{
-  "Id":null,
-  "name":"Solar System",
-  "Description":"Made in Burma",
-  "Price":"$2000"
-}
+<pre>
+  <code>
+      {
+        "Id":null,
+        "name":"Solar System",
+        "Description":"Made in Burma",
+        "Price":"$2000"
+      }
+  </code>
+</pre>
+
 If update Id must greater than zero
  {
   "Id":1,
